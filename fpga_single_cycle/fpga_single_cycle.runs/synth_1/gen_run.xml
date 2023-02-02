@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1662975149">
+  <File Type="PA-TCL" Name="single_cycle.tcl"/>
+  <File Type="REPORTS-TCL" Name="single_cycle_reports.tcl"/>
+  <File Type="RDS-RDS" Name="single_cycle.vds"/>
+  <File Type="RDS-UTIL" Name="single_cycle_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="single_cycle_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="single_cycle.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ALU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/ALU.v"/>
+        <Attr Name="ImportTime" Val="1666797086"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hardwire_controller/verilog/gates/AND_GATE.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/AND_GATE.v"/>
+        <Attr Name="ImportTime" Val="1662604468"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hardwire_controller/verilog/gates/AND_GATE_10_INPUTS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/AND_GATE_10_INPUTS.v"/>
+        <Attr Name="ImportTime" Val="1662604468"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hardwire_controller/verilog/gates/AND_GATE_5_INPUTS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/AND_GATE_5_INPUTS.v"/>
+        <Attr Name="ImportTime" Val="1662604468"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hardwire_controller/verilog/gates/AND_GATE_8_INPUTS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/AND_GATE_8_INPUTS.v"/>
+        <Attr Name="ImportTime" Val="1662604468"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Mux2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/Mux2.v"/>
+        <Attr Name="ImportTime" Val="1662606973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Mux4.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/Mux4.v"/>
+        <Attr Name="ImportTime" Val="1662606967"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hardwire_controller/verilog/gates/NOT_GATE.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/NOT_GATE.v"/>
+        <Attr Name="ImportTime" Val="1662604468"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hardwire_controller/verilog/gates/OR_GATE.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/OR_GATE.v"/>
+        <Attr Name="ImportTime" Val="1662604468"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hardwire_controller/verilog/gates/OR_GATE_10_INPUTS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/OR_GATE_10_INPUTS.v"/>
+        <Attr Name="ImportTime" Val="1662604468"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hardwire_controller/verilog/gates/OR_GATE_11_INPUTS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/OR_GATE_11_INPUTS.v"/>
+        <Attr Name="ImportTime" Val="1662604468"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hardwire_controller/verilog/gates/OR_GATE_13_INPUTS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/OR_GATE_13_INPUTS.v"/>
+        <Attr Name="ImportTime" Val="1662604468"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hardwire_controller/verilog/gates/OR_GATE_19_INPUTS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/OR_GATE_19_INPUTS.v"/>
+        <Attr Name="ImportTime" Val="1662604468"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hardwire_controller/verilog/gates/OR_GATE_7_INPUTS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/OR_GATE_7_INPUTS.v"/>
+        <Attr Name="ImportTime" Val="1662604468"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hardwire_controller/verilog/gates/OR_GATE_8_INPUTS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/OR_GATE_8_INPUTS.v"/>
+        <Attr Name="ImportTime" Val="1662604468"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Pri.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/Pri.v"/>
+        <Attr Name="ImportTime" Val="1662705400"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/adder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/adder.v"/>
+        <Attr Name="ImportTime" Val="1662637033"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hardwire_controller/verilog/circuit/alu_controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/verilog/circuit/alu_controller.v"/>
+        <Attr Name="ImportTime" Val="1662604468"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/counter.v"/>
+        <Attr Name="ImportTime" Val="1662714914"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/data_ram.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/data_ram.v"/>
+        <Attr Name="ImportTime" Val="1662963164"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/decode3_8.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/decode3_8.v"/>
+        <Attr Name="ImportTime" Val="1652105594"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/decoder_24.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/decoder_24.v"/>
+        <Attr Name="ImportTime" Val="1662890550"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/divider.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/divider.v"/>
+        <Attr Name="ImportTime" Val="1652097535"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hardwire_controller/verilog/circuit/hardwire_controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/verilog/circuit/hardwire_controller.v"/>
+        <Attr Name="ImportTime" Val="1662604468"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/inst_rom.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/inst_rom.v"/>
+        <Attr Name="ImportTime" Val="1662963758"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pattern.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/pattern.v"/>
+        <Attr Name="ImportTime" Val="1652103732"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/regfile.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/regfile.v"/>
+        <Attr Name="ImportTime" Val="1662961797"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/register.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/register.v"/>
+        <Attr Name="ImportTime" Val="1662692716"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hardwire_controller/verilog/circuit/signal_controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/verilog/circuit/signal_controller.v"/>
+        <Attr Name="ImportTime" Val="1662604468"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/signed_ext.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/signed_ext.v"/>
+        <Attr Name="ImportTime" Val="1662606888"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/unsigned_ext.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/unsigned_ext.v"/>
+        <Attr Name="ImportTime" Val="1662606832"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/single_cycle.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/single_cycle.v"/>
+        <Attr Name="ImportTime" Val="1662975044"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hardwire_controller/mips_cpu/ccab.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/ccab.txt"/>
+        <Attr Name="ImportTime" Val="1662694187"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="single_cycle"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/mips_cpu/Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/Nexys4DDR_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1662692432"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,512 @@
+
+*** Running vivado
+    with args -log single_cycle.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source single_cycle.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source single_cycle.tcl -notrace
+Command: synth_design -top single_cycle -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 32456
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'single_cycle' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/single_cycle.v:23]
+INFO: [Synth 8-6157] synthesizing module 'divider' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/divider.v:23]
+	Parameter N bound to: 100000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider' (1#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'divider__parameterized0' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/divider.v:23]
+	Parameter N bound to: 1000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider__parameterized0' (1#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux4' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/Mux4.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Mux4' (2#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/Mux4.v:2]
+INFO: [Synth 8-6157] synthesizing module 'register' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/register.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'register' (3#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/register.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adder' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/adder.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (4#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/adder.v:2]
+INFO: [Synth 8-6157] synthesizing module 'inst_rom' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/inst_rom.v:23]
+INFO: [Synth 8-3876] $readmem data file 'D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/ccab.txt' is read successfully [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/inst_rom.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'inst_rom' (5#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/inst_rom.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hardwire_controller' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/circuit/hardwire_controller.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/AND_GATE.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE' (6#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/AND_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE__parameterized0' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/AND_GATE.v:9]
+	Parameter BubblesMask bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE__parameterized0' (6#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/AND_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'signal_controller' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/circuit/signal_controller.v:9]
+INFO: [Synth 8-6157] synthesizing module 'NOT_GATE' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/NOT_GATE.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'NOT_GATE' (7#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/NOT_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_8_INPUTS' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/AND_GATE_8_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_8_INPUTS' (8#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/AND_GATE_8_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_5_INPUTS' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/AND_GATE_5_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_5_INPUTS' (9#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/AND_GATE_5_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'AND_GATE_10_INPUTS' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/AND_GATE_10_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AND_GATE_10_INPUTS' (10#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/AND_GATE_10_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_11_INPUTS' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/OR_GATE_11_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_11_INPUTS' (11#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/OR_GATE_11_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/OR_GATE.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE' (12#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/OR_GATE.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_19_INPUTS' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/OR_GATE_19_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_19_INPUTS' (13#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/OR_GATE_19_INPUTS.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'signal_controller' (14#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/circuit/signal_controller.v:9]
+INFO: [Synth 8-6157] synthesizing module 'alu_controller' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/circuit/alu_controller.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_8_INPUTS' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/OR_GATE_8_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_8_INPUTS' (15#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/OR_GATE_8_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_10_INPUTS' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/OR_GATE_10_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_10_INPUTS' (16#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/OR_GATE_10_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_7_INPUTS' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/OR_GATE_7_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_7_INPUTS' (17#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/OR_GATE_7_INPUTS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'OR_GATE_13_INPUTS' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/OR_GATE_13_INPUTS.v:9]
+	Parameter BubblesMask bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OR_GATE_13_INPUTS' (18#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/gates/OR_GATE_13_INPUTS.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'alu_controller' (19#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/circuit/alu_controller.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'hardwire_controller' (20#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/verilog/circuit/hardwire_controller.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Pri' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/Pri.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Pri' (21#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/Pri.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Mux2' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/Mux2.v:2]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux2' (22#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/Mux2.v:2]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/regfile.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (23#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/regfile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux2__parameterized0' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/Mux2.v:2]
+	Parameter N bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux2__parameterized0' (23#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/Mux2.v:2]
+INFO: [Synth 8-6157] synthesizing module 'signed_extend' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/signed_ext.v:1]
+	Parameter N bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'signed_extend' (24#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/signed_ext.v:1]
+INFO: [Synth 8-6157] synthesizing module 'signed_extend__parameterized0' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/signed_ext.v:1]
+	Parameter N bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'signed_extend__parameterized0' (24#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/signed_ext.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Mux2__parameterized1' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/Mux2.v:2]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux2__parameterized1' (24#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/Mux2.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/ALU.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (25#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/ALU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'unsigned_extend' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/unsigned_ext.v:1]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'unsigned_extend' (26#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/unsigned_ext.v:1]
+INFO: [Synth 8-6157] synthesizing module 'decoder_24' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/decoder_24.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_24' (27#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/decoder_24.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux2__parameterized2' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/Mux2.v:2]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux2__parameterized2' (27#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/Mux2.v:2]
+INFO: [Synth 8-6157] synthesizing module 'data_ram' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/data_ram.v:23]
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "ram_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'data_ram' (28#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/data_ram.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (29#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'decode3_8' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/decode3_8.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'decode3_8' (30#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/decode3_8.v:23]
+INFO: [Synth 8-226] default block is never used [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/single_cycle.v:96]
+INFO: [Synth 8-6157] synthesizing module 'pattern' [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/pattern.v:23]
+INFO: [Synth 8-226] default block is never used [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/pattern.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'pattern' (31#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/pattern.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'single_cycle' (32#1) [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.srcs/sources_1/new/single_cycle.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1604.480 ; gain = 587.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 1604.480 ; gain = 587.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 1604.480 ; gain = 587.637
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1604.480 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/single_cycle_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/single_cycle_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1917.199 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.355 . Memory (MB): peak = 1917.199 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 1917.199 ; gain = 900.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 1917.199 ; gain = 900.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 1917.199 ; gain = 900.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:06:16 ; elapsed = 00:06:58 . Memory (MB): peak = 1972.141 ; gain = 955.297
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_5'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_33'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_41'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_46'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_47'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_57'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_60'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_63'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_64'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_73'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_90'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_94'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_102'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_119'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_125'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_133'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_141'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_142'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_147'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_175'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_176'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_177'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_191'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_192'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_193'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_199'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_232'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_235'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_238'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_251'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_255'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_257'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_259'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_271'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_277'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_282'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_288'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_290'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_1' (NOT_GATE) to 'control/signal_controller_1/GATE_300'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_4' (NOT_GATE) to 'control/signal_controller_1/GATE_11'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_4' (NOT_GATE) to 'control/signal_controller_1/GATE_49'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_4' (NOT_GATE) to 'control/signal_controller_1/GATE_62'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_4' (NOT_GATE) to 'control/signal_controller_1/GATE_69'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_4' (NOT_GATE) to 'control/signal_controller_1/GATE_98'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_4' (NOT_GATE) to 'control/signal_controller_1/GATE_106'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_4' (NOT_GATE) to 'control/signal_controller_1/GATE_121'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_4' (NOT_GATE) to 'control/signal_controller_1/GATE_151'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_4' (NOT_GATE) to 'control/signal_controller_1/GATE_158'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_4' (NOT_GATE) to 'control/signal_controller_1/GATE_189'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_4' (NOT_GATE) to 'control/signal_controller_1/GATE_196'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_4' (NOT_GATE) to 'control/signal_controller_1/GATE_223'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_9'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_12'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_22'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_44'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_59'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_66'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_74'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_78'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_79'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_95'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_100'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_111'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_115'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_127'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_129'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_132'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_135'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_138'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_152'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_153'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_162'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_164'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_165'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_167'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_172'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_174'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_184'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_194'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_195'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_201'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_207'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_214'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_216'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_230'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_246'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_263'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_272'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_285'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_291'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_297'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_301'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_303'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_6' (NOT_GATE) to 'control/signal_controller_1/GATE_306'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_8' (NOT_GATE) to 'control/signal_controller_1/GATE_27'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_8' (NOT_GATE) to 'control/signal_controller_1/GATE_30'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_8' (NOT_GATE) to 'control/signal_controller_1/GATE_76'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_8' (NOT_GATE) to 'control/signal_controller_1/GATE_97'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_8' (NOT_GATE) to 'control/signal_controller_1/GATE_108'
+INFO: [Synth 8-223] decloning instance 'control/signal_controller_1/GATE_8' (NOT_GATE) to 'control/signal_controller_1/GATE_117'
+INFO: [Common 17-14] Message 'Synth 8-223' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 11    
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---XORs : 
+	               32 Bit    Wide XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                8 Bit    Registers := 4096  
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input 32768 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 8     
+	   4 Input   32 Bit        Muxes := 3     
+	 292 Input   32 Bit        Muxes := 1     
+	  14 Input   32 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 16389 
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 2     
+	  14 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP Result0, operation Mode is: A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: Generating DSP Result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: Generating DSP Result0, operation Mode is: A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: Generating DSP Result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+DSP Report: operator Result0 is absorbed into DSP Result0.
+WARNING: [Synth 8-7129] Port Addr[9] in module inst_rom is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:12:02 ; elapsed = 00:14:49 . Memory (MB): peak = 2054.875 ; gain = 1038.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------------+-----------------+-----------+----------------------+--------------+
+|Module Name       | RTL Object      | Inference | Size (Depth x Width) | Primitives   | 
++------------------+-----------------+-----------+----------------------+--------------+
+|single_cycle__GC0 | RegFile/ram_reg | Implied   | 32 x 32              | RAM32M x 12	 | 
++------------------+-----------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:12:22 ; elapsed = 00:15:09 . Memory (MB): peak = 2054.875 ; gain = 1038.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:14:13 ; elapsed = 00:17:01 . Memory (MB): peak = 2301.098 ; gain = 1284.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------------+-----------------+-----------+----------------------+--------------+
+|Module Name       | RTL Object      | Inference | Size (Depth x Width) | Primitives   | 
++------------------+-----------------+-----------+----------------------+--------------+
+|single_cycle__GC0 | RegFile/ram_reg | Implied   | 32 x 32              | RAM32M x 12	 | 
++------------------+-----------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:15:47 ; elapsed = 00:18:55 . Memory (MB): peak = 2379.836 ; gain = 1362.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:16:14 ; elapsed = 00:19:24 . Memory (MB): peak = 2379.836 ; gain = 1362.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:16:15 ; elapsed = 00:19:25 . Memory (MB): peak = 2379.836 ; gain = 1362.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:16:29 ; elapsed = 00:19:39 . Memory (MB): peak = 2379.836 ; gain = 1362.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:16:30 ; elapsed = 00:19:40 . Memory (MB): peak = 2379.836 ; gain = 1362.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:17:08 ; elapsed = 00:20:18 . Memory (MB): peak = 2379.836 ; gain = 1362.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:17:09 ; elapsed = 00:20:19 . Memory (MB): peak = 2379.836 ; gain = 1362.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |   391|
+|3     |DSP48E1 |     3|
+|4     |LUT1    |   106|
+|5     |LUT2    |   762|
+|6     |LUT3    |  7969|
+|7     |LUT4    |  3082|
+|8     |LUT5    |  2047|
+|9     |LUT6    | 50243|
+|10    |MUXF7   |  4414|
+|11    |MUXF8   |  2185|
+|12    |RAM32M  |    12|
+|13    |FDCE    |    64|
+|14    |FDRE    | 32841|
+|15    |IBUF    |     3|
+|16    |OBUF    |    16|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:17:09 ; elapsed = 00:20:19 . Memory (MB): peak = 2379.836 ; gain = 1362.992
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:15:47 ; elapsed = 00:19:54 . Memory (MB): peak = 2379.836 ; gain = 1050.273
+Synthesis Optimization Complete : Time (s): cpu = 00:17:09 ; elapsed = 00:20:22 . Memory (MB): peak = 2379.836 ; gain = 1362.992
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2379.836 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7005 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2379.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+195 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:17:58 ; elapsed = 00:21:12 . Memory (MB): peak = 2379.836 ; gain = 1362.992
+INFO: [Common 17-1381] The checkpoint 'D:/work/hardware_training/package/cpu21-riscv-fpga/hardwire_controller/mips_cpu/mips_cpu.runs/synth_1/single_cycle.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 2379.836 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file single_cycle_utilization_synth.rpt -pb single_cycle_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 12 17:54:05 2022...
